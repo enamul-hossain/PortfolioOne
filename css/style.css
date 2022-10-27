@@ -68,6 +68,31 @@ header .nav{
     color: #69b4fd !important;
 }
 
+/* .toggle{
+    display: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    float: right;
+    line-height: 65px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+} */
+
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(132, 144, 255, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: -120px;
+}
+
+#check{
+    display: none;
+}
+
 /* Hader End */
 
 /* Banner Section Start */
@@ -467,3 +492,87 @@ header .nav{
     color: #222;
 }
 /* Plan End */
+/* Footer Start */
+footer{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-color: #04091e;
+    color: #FFF;
+}
+
+.footerArea{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.footerArea h4{
+    font-size: 18px;
+}
+
+.footerArea p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.footer_about{
+    width: 480px;
+}
+
+.footer_news input{
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 150px 10px 10px;
+}
+
+.footer_news button{
+    font-size: 18px;
+    color: #FFF;
+    background: linear-gradient(40deg, rgba(132,144,255,1) 40%, rgba(98,189,252,1) 100%);
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+}
+.footer_follow i{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.footer_follow i:hover{
+    color: #69b4fd;
+}
+/* Footer End */
+
+@media (max-wdth:768px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+
+    header .logo{
+        margin-left: 30px;
+        padding: 20px;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .nav ul li{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #f9f9f9;
+        top: 54px;
+        left: -200px;
+        transition: all 0.5s;
+    }
+}
